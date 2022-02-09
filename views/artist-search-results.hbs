@@ -1,0 +1,13 @@
+<form action="/albums">
+
+<ul>
+    {{#each artists}}
+    <li>
+        <a href="/albums/{{this.id}}">
+         <img src= "{{images.[0].url}}"
+         width=150" height="70">
+        </a>
+    </li>
+    {{/each}}
+</ul>
+
